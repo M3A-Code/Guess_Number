@@ -106,6 +106,16 @@ h2 {
     text-indent: 10px;
 }
 
+@media (max-width : 768px){
+    .scoreText{
+        font-size:30px;
+    }
+    .scoreText span,
+    .chances span{
+        font-size:30px;
+    }
+}
+
 .colorRight {
     color: green;
 }
