@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    background-color: #3C3633;
+}
+
+h2 {
+    font-size: 45px;
+    color: #EEEDEB;
+}
+
+.input {
+    width: 80px;
+    height: 100px;
+    margin: 5px;
+    padding: 10px;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    border-bottom: 3px solid #AAA;
+    background-color: #E0CCBE;
+
+}
+
+.input:focus {
+    outline: none;
+    border-bottom: 3px solid blueviolet;
+}
+
+.btn {
+    width: 150px;
+    height: 80px;
+    margin-top: 30px;
+    padding: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: #747264a2;
+    color: #DDD;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+.btn:hover {
+    background-color: #747264;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    margin: auto;
+}
+
+/* small */
+@media (min-width : 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1000px;
+    }
+}
+
+.chances {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    font-size: 40px;
+}
+
+.scoreText {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    font-size: 40px;
+}
+
+.scoreText span,
+.chances span {
+    color: #FFF;
+    font-size: 40px;
+    text-indent: 10px;
+}
+
+.colorRight {
+    color: green;
+}
+
+.colorWrong {
+    color: red;
+}
+
+.mainEnd {
+    width: 400px;
+    height: 250px;
+    display: flex;
+    border-radius: 25px;
+    padding: 20px;
+    position: absolute;
+    top: calc(50% - 100px);
+    right: calc(50% - 200px);
+    text-align: center;
+    margin: auto;
+    z-index: 1;
+    background-color: #DDD;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.mainText {
+    font-size: 25px;
+    margin: 10px 0;
+}
+
+.scoreAddvertise {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+
+.scoreValue {
+    font-size: 18px;
+}
+
+.mainBtn {
+    background-color: #3C3633;
+    color: #FFF;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #3c3633;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.mainBtn:hover {
+    opacity: .9;
+}
+
+.parentHide {
+    position: relative;
+    z-index: -1;
+    opacity: 0.5;
+}
