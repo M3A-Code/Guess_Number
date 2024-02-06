@@ -25,7 +25,7 @@ let passIndexThree = Math.floor(Math.random() * 10);
 
 // Initial Value
 count.textContent = 0;
-chance.textContent = 10;
+chance.textContent = 5;
 
 // Increment && Decrement
 let countNum = +count.innerHTML;
